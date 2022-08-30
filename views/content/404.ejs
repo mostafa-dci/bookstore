@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Error</h1>
+            <% if(typeof error == "undefined"){ %>
+<p class="text-danger">The requested Page NOT Found.</p>
+<%}else{%>
+    <p class="text-danger"><%= error.message%></p>
+    <%}%>
+<a class="btn btn-success" href="/">Go to Home</a>
+        </div>
+    </div>
+</div>

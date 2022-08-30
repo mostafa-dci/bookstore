@@ -1,0 +1,510 @@
+[
+  {
+    "books": [
+      {
+        "id": 0,
+        "title": "The Fault in Our Stars",
+        "author": "Jenna Ellison",
+        "pages": 250,
+        "prise": 50,
+        "description": "Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything but terminal, her final chapter inscribed upon diagnosis. But when a gorgeous plot twist named Augustus Waters suddenly appears at Cancer Kid Support Group, Hazel's story is about to be completely rewritten.",
+        "authorId": "6216c80dd6bbeb12f41ff830"
+      },
+      {
+        "id": 1,
+        "title": "The Alchemist",
+        "author": "Chad Hendricks",
+        "pages": 400,
+        "prise": 75,
+        "description": "Paulo Coelho's enchanting novel has inspired a devoted following around the world. This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago, who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids.",
+        "authorId": "6216cbdbbaa4dc2495acc3c2"
+      },
+      {
+        "id": 2,
+        "title": "To Kill a Mockingbird",
+        "author": "Trevon Pena",
+        "pages": 320,
+        "prise": 60,
+        "description": "The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it. \"To Kill A Mockingbird\" became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic.",
+        "authorId": "6216cbdbbaa4dc2495acc3c0"
+      },
+      {
+        "id": 3,
+        "title": "The Hunger Games",
+        "author": "Greta Bolton",
+        "pages": 500,
+        "prise": 45,
+        "description": "In the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing them all to send one boy and one girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV.\r\n\r\nSixteen-year-old Katniss Everdeen, who lives alone with her mother and younger sister, regards it as a death sentence when she steps forward to take her sister's place in the Games. But Katniss has been close to dead before—and survival, for her, is second nature. Without really meaning to, she becomes a contender. But if she is to win, she will have to start making choices that weight survival against humanity and life against love. ",
+        "authorId": "6216cbdbbaa4dc2495acc3bd"
+      },
+      {
+        "id": 4,
+        "title": "The Da Vinci Code",
+        "author": "Aliya Kelly",
+        "pages": 150,
+        "prise": 79,
+        "description": "While in Paris, Harvard symbologist Robert Langdon is awakened by a phone call in the dead of the night. The elderly curator of the Louvre has been murdered inside the museum, his body covered in baffling symbols. As Langdon and gifted French cryptologist Sophie Neveu sort through the bizarre riddles, they are stunned to discover a trail of clues hidden in the works of Leonardo da Vinci—clues visible for all to see and yet ingeniously disguised by the painter.",
+        "authorId": "6216c80dd6bbeb12f41ff82d"
+      },
+      {
+        "id": 5,
+        "title": "The Perks of Being a Wallflower",
+        "author": "Aliya Kelly",
+        "pages": 543,
+        "prise": 100,
+        "description": "standing on the fringes of life...\r\noffers a unique perspective. But there comes a time to see\r\nwhat it looks like from the dance floor.",
+        "authorId": "6216c80dd6bbeb12f41ff82d"
+      },
+      {
+        "id": 6,
+        "title": "The Book Thief",
+        "author": "Meghan Abbott",
+        "pages": 168,
+        "prise": 49,
+        "description": "It is 1939. Nazi Germany. The country is holding its breath. Death has never been busier, and will be busier still.\r\n",
+        "authorId": "6216c80dd6bbeb12f41ff834"
+      },
+      {
+        "id": 7,
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "author": "Gwendolyn Rowe",
+        "pages": 390,
+        "prise": 67,
+        "description": "Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he receives a letter that tells him the truth about himself: he's a wizard. A mysterious visitor rescues him from his relatives and takes him to his new home, Hogwarts School of Witchcraft and Wizardry.",
+        "authorId": "6216c80dd6bbeb12f41ff82e"
+      },
+      {
+        "id": 8,
+        "title": "The Kite Runner",
+        "author": "Alessandro Chung",
+        "pages": 335,
+        "prise": 43,
+        "description": "The unforgettable, heartbreaking story of the unlikely friendship between a wealthy boy and the son of his father’s servant, The Kite Runner is a beautifully crafted novel set in a country that is in the process of being destroyed. It is about the power of reading, the price of betrayal, and the possibility of redemption; and an exploration of the power of fathers over sons—their love, their sacrifices, their lies.",
+        "authorId": "6216cbdbbaa4dc2495acc3bf"
+      },
+      {
+        "id": 9,
+        "title": "The Help",
+        "author": "Savion Browning",
+        "pages": 344,
+        "prise": 55,
+        "description": "Twenty-two-year-old Skeeter has just returned home after graduating from Ole Miss. She may have a degree, but it is 1962, Mississippi, and her mother will not be happy till Skeeter has a ring on her finger. Skeeter would normally find solace with her beloved maid Constantine, the woman who raised her, but Constantine has disappeared and no one will tell Skeeter where she has gone.",
+        "authorId": "6216c80dd6bbeb12f41ff82f"
+      },
+      {
+        "id": 10,
+        "title": "Mockingjay",
+        "author": "Nick Ortega",
+        "pages": 150,
+        "prise": 55,
+        "description": "Katniss Everdeen, girl on fire, has survived, even though her home has been destroyed. Gale has escaped. Katniss's family is safe. Peeta has been captured by the Capitol. District 13 really does exist. There are rebels. There are new leaders. A revolution is unfolding.",
+        "authorId": "6216c80dd6bbeb12f41ff82b"
+      },
+      {
+        "id": 11,
+        "title": "Angels & Demons",
+        "author": "Savion Browning",
+        "pages": 80,
+        "prise": 67,
+        "description": "World-renowned Harvard symbologist Robert Langdon is summoned to a Swiss research facility to analyze a cryptic symbol seared into the chest of a murdered physicist. What he discovers is unimaginable: a deadly vendetta against the Catholic Church by a centuries-old underground organization -- the Illuminati. In a desperate race to save the Vatican from a powerful time bomb, Langdon joins forces in Rome with the beautiful and mysterious scientist Vittoria Vetra. Together they embark on a frantic hunt through sealed crypts, dangerous catacombs, and deserted cathedrals, and into the depths of the most secretive vault on earth...the long-forgotten Illuminati lair.\r\n(back cover)",
+        "authorId": "6216c80dd6bbeb12f41ff82f"
+      },
+      {
+        "id": 12,
+        "title": "Animal Farm",
+        "author": "Nick Ortega",
+        "pages": 346,
+        "prise": 50,
+        "description": "A farm is taken over by its overworked, mistreated animals. With flaming idealism and stirring slogans, they set out to create a paradise of progress, justice, and equality. Thus the stage is set for one of the most telling satiric fables ever penned –a razor-edged fairy tale for grown-ups that records the evolution from revolution against tyranny to a totalitarianism just as terrible.",
+        "authorId": "6216c80dd6bbeb12f41ff82b"
+      },
+      {
+        "id": 13,
+        "title": "Catching Fire",
+        "author": "Gabrielle Pitts",
+        "pages": 321,
+        "prise": 170,
+        "description": "Against all odds, Katniss Everdeen has won the Hunger Games. She and fellow District 12 tribute Peeta Mellark are miraculously still alive. Katniss should be relieved, happy even. After all, she has returned to her family and her longtime friend, Gale. Yet nothing is the way Katniss wishes it to be. Gale holds her at an icy distance. Peeta has turned his back on her completely. And there are whispers of a rebellion against the Capitol—a rebellion that Katniss and Peeta may have helped create.",
+        "authorId": "6216cbdbbaa4dc2495acc3c1"
+      },
+      {
+        "id": 14,
+        "title": "The Girl with the Dragon Tattoo",
+        "author": "Kyra Huang",
+        "pages": 256,
+        "prise": 200,
+        "description": "Harriet Vanger, a scion of one of Sweden’s wealthiest families disappeared over forty years ago. All these years later, her aged uncle continues to seek the truth. He hires Mikael Blomkvist, a crusading journalist recently trapped by a libel conviction, to investigate. He is aided by the pierced and tattooed punk prodigy Lisbeth Salander. Together they tap into a vein of unfathomable iniquity and astonishing corruption.",
+        "authorId": "6216cbdbbaa4dc2495acc3c3"
+      },
+      {
+        "id": 15,
+        "title": "The Diary of a Young Girl",
+        "author": "Alaina Patel",
+        "pages": 370,
+        "prise": 300,
+        "description": "Discovered in the attic in which she spent the last years of her life, Anne Frank’s remarkable diary has become a world classic—a powerful reminder of the horrors of war and an eloquent testament to the human spirit.",
+        "authorId": "6216cbdbbaa4dc2495acc3c6"
+      },
+      {
+        "id": 16,
+        "title": "Water for Elephants",
+        "author": "Shaniya Hammond",
+        "pages": 334,
+        "prise": 220,
+        "description": "An atmospheric, gritty, and compelling novel of star-crossed lovers, set in the circus world circa 1932, by the bestselling author of Riding Lessons.",
+        "authorId": "6216cbdbbaa4dc2495acc3be"
+      },
+      {
+        "id": 17,
+        "title": "Looking for Alaska",
+        "author": "Shaniya Hammond",
+        "pages": 439,
+        "prise": 390,
+        "description": "Before. Miles “Pudge” Halter is done with his safe life at home. His whole life has been one big non-event, and his obsession with famous last words has only made him crave “the Great Perhaps” even more (Francois Rabelais, poet). He heads off to the sometimes crazy and anything-but-boring world of Culver Creek Boarding School, and his life becomes the opposite of safe. Because down the hall is Alaska Young. The gorgeous, clever, funny, sexy, self-destructive, screwed up, and utterly fascinating Alaska Young. She is an event unto herself. She pulls Pudge into her world, launches him into the Great Perhaps, and steals his heart. Then. . . .",
+        "authorId": "6216cbdbbaa4dc2495acc3be"
+      },
+      {
+        "id": 18,
+        "title": "Memoirs of a Geisha",
+        "author": "Josie Clements",
+        "pages": 489,
+        "prise": 378,
+        "description": "A literary sensation and runaway bestseller, this brilliant debut novel presents with seamless authenticity and exquisite lyricism the true confessions of one of Japan's most celebrated geisha.\r\n",
+        "authorId": "6216cbdbbaa4dc2495acc3c4"
+      },
+      {
+        "id": 19,
+        "title": "The Five People You Meet in Heaven",
+        "author": "Chris Knight",
+        "pages": 167,
+        "prise": 35,
+        "description": "From the author of the phenomenal #1 New York Times bestseller Tuesdays with Morrie, a novel that explores the unexpected connections of our lives, and the idea that heaven is more than a place; it's an answer.",
+        "authorId": "6216cbdbbaa4dc2495acc3c5"
+      },
+      {
+        "id": 20,
+        "title": "Life of Pi",
+        "author": "Chris Knight",
+        "pages": 367,
+        "prise": 245,
+        "description": "Life of Pi is a fantasy adventure novel by Yann Martel published in 2001. The protagonist, Piscine Molitor \"Pi\" Patel, a Tamil boy from Pondicherry, explores issues of spirituality and practicality from an early age. He survives 227 days after a shipwreck while stranded on a boat in the Pacific Ocean with a Bengal tiger named Richard Parker. ",
+        "authorId": "6216cbdbbaa4dc2495acc3c5"
+      },
+      {
+        "id": 21,
+        "title": "What If? Serious Scientific Answers to Absurd Hypothetical Questions",
+        "author": "Phoenix Nolan",
+        "pages": 365,
+        "prise": 167,
+        "description": "Randall Munroe left NASA in 2005 to start up his hugely popular site XKCD 'a web comic of romance, sarcasm, math and language' which offers a witty take on the world of science and geeks. It now has 600,000 to a million page hits daily. Every now and then, Munroe would get emails asking him to arbitrate a science debate. 'My friend and I were arguing about what would happen if a bullet got struck by lightning, and we agreed that you should resolve it . . . ' He liked these questions so much that he started up What If.",
+        "authorId": "6216cbdbbaa4dc2495acc3bc"
+      },
+      {
+        "id": 22,
+        "title": "Fifty Shades of Grey",
+        "author": "Susie Ebony Ruff",
+        "pages": 450,
+        "prise": 200,
+        "description": "When literature student Anastasia Steele goes to interview young entrepreneur Christian Grey, she encounters a man who is beautiful, brilliant, and intimidating. The unworldly, innocent Ana is startled to realize she wants this man and, despite his enigmatic reserve, finds she is desperate to get close to him. Unable to resist Ana’s quiet beauty, wit, and independent spirit, Grey admits he wants her, too—but on his own terms.",
+        "authorId": "6217a3f872a19a470684248e"
+      },
+      {
+        "id": 23,
+        "title": "The Great Gatsby",
+        "author": "Jenna Ellison",
+        "pages": 456,
+        "prise": 342,
+        "description": "The Great Gatsby, F. Scott Fitzgerald's third book, stands as the supreme achievement of his career. This exemplary novel of the Jazz Age has been acclaimed by generations of readers. The story is of the fabulously wealthy Jay Gatsby and his new love for the beautiful Daisy Buchanan, of lavish parties on Long Island at a time when The New York Times noted \"gin was the national drink and sex the national obsession,\" it is an exquisitely crafted tale of America in the 1920s.",
+        "authorId": "6216c80dd6bbeb12f41ff830"
+      },
+      {
+        "id": 24,
+        "title": "1984",
+        "author": "Chad Hendricks",
+        "pages": 345,
+        "prise": 267,
+        "description": "Among the seminal texts of the 20th century, Nineteen Eighty-Four is a rare work that grows more haunting as its futuristic purgatory becomes more real. Published in 1949, the book offers political satirist George Orwell's nightmarish vision of a totalitarian, bureaucratic world and one poor stiff's attempt to find individuality. The brilliance of the novel is Orwell's prescience of modern life—the ubiquity of television, the distortion of the language—and his ability to construct such a thorough version of hell. Required reading for students since it was published, it ranks among the most terrifying novels ever written. ",
+        "authorId": "6216cbdbbaa4dc2495acc3c2"
+      },
+      {
+        "id": 25,
+        "title": "Twilight",
+        "author": "Trevon Pena",
+        "pages": 354,
+        "prise": 200,
+        "description": "About three things I was absolutely positive.\r\n\r\nFirst, Edward was a vampire.\r\n\r\nSecond, there was a part of him—and I didn't know how dominant that part might be—that thirsted for my blood.\r\n\r\nAnd third, I was unconditionally and irrevocably in love with him.",
+        "authorId": "6216cbdbbaa4dc2495acc3c0"
+      },
+      {
+        "id": 26,
+        "title": "Freakonomics: A Rogue Economist Explores the Hidden Side of Everything",
+        "author": "Greta Bolton",
+        "pages": 243,
+        "prise": 100,
+        "description": "Which is more dangerous, a gun or a swimming pool? What do schoolteachers and sumo wrestlers have in common? Why do drug dealers still live with their moms? How much do parents really matter? What kind of impact did Roe v. Wade have on violent crime? Freakonomics will literally redefine the way we view the modern world.",
+        "authorId": "6216cbdbbaa4dc2495acc3bd"
+      },
+      {
+        "id": 27,
+        "title": "Pride and Prejudice",
+        "author": "Donavan Velasquez",
+        "pages": 267,
+        "prise": 199,
+        "description": "Since its immediate success in 1813, Pride and Prejudice has remained one of the most popular novels in the English language. Jane Austen called this brilliant work \"her own darling child\" and its vivacious heroine, Elizabeth Bennet, \"as delightful a creature as ever appeared in print.\" The romantic clash between the opinionated Elizabeth and her proud beau, Mr. Darcy, is a splendid performance of civilized sparring. And Jane Austen's radiant wit sparkles as her characters dance a delicate quadrille of flirtation and intrigue, making this book the most superb comedy of manners of Regency England. ",
+        "authorId": "6216c80dd6bbeb12f41ff82c"
+      },
+      {
+        "id": 28,
+        "title": "Lord of the Flies",
+        "author": "Savion Browning",
+        "pages": 165,
+        "prise": 45,
+        "description": "At the dawn of the next world war, a plane crashes on an uncharted island, stranding a group of schoolboys. At first, with no adult supervision, their freedom is something to celebrate; this far from civilization the boys can do anything they want. Anything. They attempt to forge their own society, failing, however, in the face of terror, sin and evil. And as order collapses, as strange howls echo in the night, as terror begins its reign, the hope of adventure seems as far from reality as the hope of being rescued. Labeled a parable, an allegory, a myth, a morality tale, a parody, a political treatise, even a vision of the apocalypse, Lord of the Flies is perhaps our most memorable novel about “the end of innocence, the darkness of man’s heart.” ",
+        "authorId": "6216c80dd6bbeb12f41ff82f"
+      },
+      {
+        "id": 29,
+        "title": "The Handmaid's Tale",
+        "author": "Jenna Ellison",
+        "pages": 200,
+        "prise": 160,
+        "description": "Offred is a Handmaid in the Republic of Gilead. She may leave the home of the Commander and his wife once a day to walk to food markets whose signs are now pictures instead of words because women are no longer allowed to read. She must lie on her back once a month and pray that the Commander makes her pregnant, because in an age of declining births, Offred and the other Handmaids are valued only if their ovaries are viable. Offred can remember the years before, when she lived and made love with her husband, Luke; when she played with and protected her daughter; when she had a job, money of her own, and access to knowledge. But all of that is gone now . . .",
+        "authorId": "6216c80dd6bbeb12f41ff830"
+      },
+      {
+        "id": 30,
+        "title": "The Lovely Bones",
+        "author": "Chad Hendricks",
+        "pages": 265,
+        "prise": 40,
+        "description": "\"My name was Salmon, like the fish; first name, Susie. I was fourteen when I was murdered on December 6, 1973.\"\r\n\r\nSo begins the story of Susie Salmon, who is adjusting to her new home in heaven, a place that is not at all what she expected, even as she is watching life on earth continue without her -- her friends trading rumors about her disappearance, her killer trying to cover his tracks, her grief-stricken family unraveling. Out of unspeakable tragedy and loss, The Lovely Bones succeeds, miraculously, in building a tale filled with hope, humor, suspense, even joy. ",
+        "authorId": "6216cbdbbaa4dc2495acc3c2"
+      },
+      {
+        "id": 31,
+        "title": "The Midnight Library",
+        "author": "Trevon Pena",
+        "pages": 346,
+        "prise": 245,
+        "description": "Between life and death there is a library, and within that library, the shelves go on forever. Every book provides a chance to try another life you could have lived. To see how things would be if you had made other choices . . . Would you have done anything different, if you had the chance to undo your regrets?",
+        "authorId": "6216cbdbbaa4dc2495acc3c0"
+      },
+      {
+        "id": 32,
+        "title": "The Catcher in the Rye",
+        "author": "Trevon Pena",
+        "pages": 265,
+        "prise": 165,
+        "description": "It's Christmas time and Holden Caulfield has just been expelled from yet another school. Fleeing the crooks at Pencey Prep, he pinballs around New York City seeking solace in fleeting encounters - shooting the bull with strangers in dive hotels, wandering alone round Central Park, getting beaten up by pimps and cut down by erstwhile girlfriends. The city is beautiful and terrible, in all its neon loneliness and seedy glamour, its mingled sense of possibility and emptiness. Holden passes through it like a ghost, thinking always of his kid sister Phoebe, the only person who really understands him, and his determination to escape the phonies and find a life of true meaning.",
+        "authorId": "6216cbdbbaa4dc2495acc3c0"
+      },
+      {
+        "id": 33,
+        "title": "Where the Sidewalk Ends",
+        "author": "Greta Bolton",
+        "pages": 244,
+        "prise": 234,
+        "description": "Where the Sidewalk Ends turns forty! Celebrate with this anniversary edition that features an eye-catching commemorative red sticker. This classic poetry collection, which is both outrageously funny and profound, has been the most beloved of Shel Silverstein's poetry books for generations.",
+        "authorId": "6216cbdbbaa4dc2495acc3bd"
+      },
+      {
+        "id": 34,
+        "title": "Wonder",
+        "author": "Aliya Kelly",
+        "pages": 233,
+        "prise": 135,
+        "description": "August Pullman was born with a facial difference that, up until now, has prevented him from going to a mainstream school. Starting 5th grade at Beecher Prep, he wants nothing more than to be treated as an ordinary kid—but his new classmates can’t get past Auggie’s extraordinary face. Wonder, begins from Auggie’s point of view, but soon switches to include his classmates, his sister, her boyfriend, and others. ",
+        "authorId": "6216c80dd6bbeb12f41ff82d"
+      },
+      {
+        "id": 35,
+        "title": "Gone Girl",
+        "author": "Meghan Abbott",
+        "pages": 165,
+        "prise": 76,
+        "description": "On a warm summer morning in North Carthage, Missouri, it is Nick and Amy Dunne’s fifth wedding anniversary. Presents are being wrapped and reservations are being made when Nick’s clever and beautiful wife disappears from their rented McMansion on the Mississippi River. Husband-of-the-Year Nick isn’t doing himself any favors with cringe-worthy daydreams about the slope and shape of his wife’s head, but passages from Amy's diary reveal the alpha-girl perfectionist could have put anyone dangerously on edge. Under mounting pressure from the police and the media—as well as Amy’s fiercely doting parents—the town golden boy parades an endless series of lies, deceits, and inappropriate behavior. Nick is oddly evasive, and he’s definitely bitter—but is he really a killer?",
+        "authorId": "6216c80dd6bbeb12f41ff834"
+      },
+      {
+        "id": 36,
+        "title": "Divergent",
+        "author": "Donavan Velasquez",
+        "pages": 165,
+        "prise": 145,
+        "description": "In Beatrice Prior's dystopian Chicago world, society is divided into five factions, each dedicated to the cultivation of a particular virtue—Candor (the honest), Abnegation (the selfless), Dauntless (the brave), Amity (the peaceful), and Erudite (the intelligent). On an appointed day of every year, all sixteen-year-olds must select the faction to which they will devote the rest of their lives. For Beatrice, the decision is between staying with her family and being who she really is—she can't have both. So she makes a choice that surprises everyone, including herself.",
+        "authorId": "6216c80dd6bbeb12f41ff82c"
+      },
+      {
+        "id": 37,
+        "title": "Fahrenheit 451",
+        "author": "Matilda Boyd",
+        "pages": 451,
+        "prise": 345,
+        "description": "Sixty years after its original publication, Ray Bradbury’s internationally acclaimed novel Fahrenheit 451 stands as a classic of world literature set in a bleak, dystopian future. Today its message has grown more relevant than ever before.",
+        "authorId": "6216c80dd6bbeb12f41ff82a"
+      },
+      {
+        "id": 38,
+        "title": "The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing",
+        "author": "Alessandro Chung",
+        "pages": 356,
+        "prise": 200,
+        "description": "Despite constant efforts to declutter your home, do papers still accumulate like snowdrifts and clothes pile up like a tangled mess of noodles?",
+        "authorId": "6216cbdbbaa4dc2495acc3bf"
+      },
+      {
+        "id": 39,
+        "title": "The Hobbit, or There and Back Again",
+        "author": "Stephanie May",
+        "pages": 400,
+        "prise": 299,
+        "description": "In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a hobbit-hole, and that means comfort.",
+        "authorId": "6216c80dd6bbeb12f41ff833"
+      },
+      {
+        "id": 40,
+        "title": "The Lion, the Witch and the Wardrobe",
+        "author": "Stephanie May",
+        "pages": 266,
+        "prise": 220,
+        "description": "Lucy is the first to find the secret of the wardrobe in the professor's mysterious old house. At first her brothers and sister don't believe her when she tells of her visit to the land of Narnia. But soon Edmund, then Peter and Susan step through the wardrobe themselves. In Narnia they find a country buried under the evil enchantment of the White Witch. When they meet the Lion Aslan, they realize they've been called to a great adventure and bravely join the battle to free Narnia from the Witch's sinister spell. ",
+        "authorId": "6216c80dd6bbeb12f41ff833"
+      },
+      {
+        "id": 41,
+        "title": "Little Women",
+        "author": "Alijah Flores",
+        "pages": 159,
+        "prise": 87,
+        "description": "Generations of readers young and old, male and female, have fallen in love with the March sisters of Louisa May Alcott’s most popular and enduring novel, Little Women. Here are talented tomboy and author-to-be Jo, tragically frail Beth, beautiful Meg, and romantic, spoiled Amy, united in their devotion to each other and their struggles to survive in New England during the Civil War.",
+        "authorId": "6216c80dd6bbeb12f41ff831"
+      },
+      {
+        "id": 42,
+        "title": "The Seven Husbands of Evelyn Hugo",
+        "author": "Meghan Abbott",
+        "pages": 234,
+        "prise": 124,
+        "description": "Aging and reclusive Hollywood movie icon Evelyn Hugo is finally ready to tell the truth about her glamorous and scandalous life. But when she chooses unknown magazine reporter Monique Grant for the job, no one is more astounded than Monique herself. Why her? Why now?",
+        "authorId": "6216c80dd6bbeb12f41ff834"
+      },
+      {
+        "id": 43,
+        "title": "The Giver",
+        "author": "Donavan Velasquez",
+        "pages": 323,
+        "prise": 166,
+        "description": "The Giver, the 1994 Newbery Medal winner, has become one of the most influential novels of our time. The haunting story centers on twelve-year-old Jonas, who lives in a seemingly ideal, if colorless, world of conformity and contentment. Not until he is given his life assignment as the Receiver of Memory does he begin to understand the dark, complex secrets behind his fragile community. This movie tie-in edition features cover art from the movie and exclusive Q&A with members of the cast, including Taylor Swift, Brenton Thwaites and Cameron Monaghan.",
+        "authorId": "6216c80dd6bbeb12f41ff82c"
+      },
+      {
+        "id": 44,
+        "title": "The Curious Incident of the Dog in the Night-Time",
+        "author": "Donavan Velasquez",
+        "pages": 227,
+        "prise": 54,
+        "description": "Christopher John Francis Boone knows all the countries of the world and their capitals and every prime number up to 7,057. He relates well to animals but has no understanding of human emotions. He cannot stand to be touched. And he detests the color yellow.",
+        "authorId": "6216c80dd6bbeb12f41ff82c"
+      },
+      {
+        "id": 45,
+        "title": "Fifty Shades Freed",
+        "author": "Stephanie May",
+        "pages": 344,
+        "prise": 233,
+        "description": "When unworldly student Anastasia Steele first encountered the driven and dazzling young entrepreneur Christian Grey it sparked a sensual affair that changed both of their lives irrevocably. Shocked, intrigued, and, ultimately, repelled by Christian’s singular erotic tastes, Ana demands a deeper commitment. Determined to keep her, Christian agrees.",
+        "authorId": "6216c80dd6bbeb12f41ff833"
+      },
+      {
+        "id": 46,
+        "title": "Dracula",
+        "author": "Matilda Boyd",
+        "pages": 322,
+        "prise": 175,
+        "description": "A rich selection of background and source materials is provided in three areas: Contexts includes probable inspirations for Dracula in the earlier works of James Malcolm Rymer and Emily Gerard. Also included are a discussion of Stoker's working notes for the novel and \"Dracula's Guest,\" the original opening chapter to Dracula. Reviews and Reactions reprints five early reviews of the novel. \"Dramatic and Film Variations\" focuses on theater and film adaptations of Dracula, two indications of the novel's unwavering appeal. David J. Skal, Gregory A. Waller, and Nina Auerbach offer their varied perspectives. Checklists of both dramatic and film adaptations are included.",
+        "authorId": "6216c80dd6bbeb12f41ff82a"
+      },
+      {
+        "title": "Java",
+        "authorId": "6216c80dd6bbeb12f41ff834",
+        "pages": "123",
+        "price": "123",
+        "description": "Java OOP Java OOP Java OOP Java OOP\r\nJava OOP Java OOP Java OOP Java OOP\r\nJava OOP Java OOP Java OOP Java OOP\r\nJava OOP Java OOP Java OOP Java OOP\r\nJava OOP Java OOP Java OOP Java OOP",
+        "id": 47,
+        "author": "Meghan Abbott"
+      },
+      {
+        "title": "aasd",
+        "authorId": "6216c80dd6bbeb12f41ff82e",
+        "pages": "32",
+        "price": "234",
+        "description": "<%%>",
+        "id": 48,
+        "author": "Gwendolyn Rowe"
+      },
+      {
+        "title": "BLABLA BOOK",
+        "authorId": "6216c80dd6bbeb12f41ff82a",
+        "pages": "500",
+        "price": "100",
+        "description": "BLABLABLA BLABLABLABLABLABLA BLABLABLA BLABLABLA\r\nBLABLABLA BLABLABLA BLABLABLA BLABLABLA BLABLABLA\r\nBLABLABLA BLABLABLABLABLABLA BLABLABLA BLABLABLA\r\nBLABLABLA BLABLABLA BLABLABLA BLABLABLA BLABLABLA\r\nBLABLABLA BLABLABLABLABLABLA BLABLABLA BLABLABLA\r\nBLABLABLA BLABLABLA BLABLABLA BLABLABLA BLABLABLA\r\nBLABLABLA BLABLABLABLABLABLA BLABLABLA BLABLABLA\r\nBLABLABLA BLABLABLA BLABLABLA BLABLABLA BLABLABLA",
+        "id": 49,
+        "author": "Matilda Boyd"
+      },
+      {
+        "title": "The Fault in Our Stars",
+        "authorId": "6216c80dd6bbeb12f41ff82e",
+        "pages": "235",
+        "price": "234",
+        "description": "defhsdfgh",
+        "id": 50,
+        "author": "Gwendolyn Rowe"
+      },
+      {
+        "title": "The Fault in Our Stars",
+        "authorId": "6216c80dd6bbeb12f41ff82e",
+        "pages": "235",
+        "price": "234",
+        "description": "defhsdfgh",
+        "id": 51,
+        "author": "Gwendolyn Rowe"
+      },
+      {
+        "title": "The Fault in Our Stars",
+        "authorId": "6216c80dd6bbeb12f41ff82e",
+        "pages": "235",
+        "price": "234",
+        "description": "defhsdfgh",
+        "id": 52,
+        "author": "Gwendolyn Rowe"
+      },
+      {
+        "title": "Story",
+        "authorId": "6216c80dd6bbeb12f41ff82e",
+        "pages": "23",
+        "price": "34",
+        "description": "This is a nice story",
+        "id": 53,
+        "author": "Gwendolyn Rowe"
+      },
+      {
+        "title": "Story1",
+        "authorId": "6216c80dd6bbeb12f41ff82d",
+        "pages": "23",
+        "price": "23",
+        "description": "wed",
+        "id": 54,
+        "author": "Aliya Kelly"
+      },
+      {
+        "title": "sdf",
+        "authorId": "6216c80dd6bbeb12f41ff82d",
+        "pages": "234",
+        "price": "234",
+        "description": "sdg",
+        "id": 55,
+        "author": "Aliya Kelly"
+      }
+    ]
+  }
+]

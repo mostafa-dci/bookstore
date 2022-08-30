@@ -2,6 +2,18 @@
 const express = require('express')
 // require dotenv
 require('dotenv').config()
+
+// require mogoose
+const mongoose = require('mongoose')
+// connecting to MongoDb
+mongoose.connect(process.env.MONGO_URI, error=>{
+    if(error){
+        console.log(error)
+    }else{
+        console.log('Connected To MongoDb...')
+    }
+})
+
 // require bookRouter
 const booksRouter = require('./routes/books')
 // require authors router

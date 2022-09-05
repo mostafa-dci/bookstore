@@ -1,124 +1,125 @@
 # Tasks For Today
-> Today we will display all books in books page, so that each book will be like one [bootstrap card](https://getbootstrap.com/docs/5.0/components/card/), and we will make a dynamic route for one book by id to display more info about one specific book.
 
-## 1- Display All Books
-If we visit this url: `localhost:3000/books`, we should display all books in data folder [books.json](./data/books.json) Folder.    
-1. Take a look at the file [books.json](./data/books.json) file in [data](./data/) folder, this file contains an array of objects `books`, see one object as an example of on book.
-2. In [bookscontroller.js](./controllers/bookscontroller.js) file, import the [books.json](./data/books.json) to use it as a resource.
-3. In [bookscontroller.js](./controllers/bookscontroller.js) file, update the method `booksHandler` to send all books to the render file `mainTemplate` to be ready to render in [books.ejs](./views/content/books.ejs) file. to be similar like this:
-```js
-const booksHandler = (req, res)=>{
-    res.render('mainTemplate', {
-        title: "Books",
-        content: "books",
-        books: books// this variable, the imported books.json content
-    })
-}
-```
-4. In the file [books.ejs](./views/content/books.ejs), you should be able to read all books object as `books`.
-5. Now, in [books.ejs](./views/content/books.ejs) file, we want to display each 3 books in one row, following the bootstrap layout, so the idea is to make each 3 cards in one row, make the following html structure:
+##  Register a new Author With Email Verification
+> In Many websites, when we register, an email will be sent to us to veaify our email in the website. <br>
+This email contains information about the website, name and url and team, services .... and so on, and it contains also a `link` when we click on, we will be redirect to that website to verify our email, this `link` contains parameters like userId, secret Key, the server will read this parameters and will detect if this information exist in database, if so the server will update our record to be as verified.
+
+## Steps
+### 1. Update [models](./models/)
+1. In [Authors.js](./models/Authors.js) File Add another field to authors schema `verified`
+    - type Boolean
+    - default false
+    - unique
+2. Create a new model `Verifications.js` in [models](./models/):
+    - Create a new Schema contains the followinng fields:
+        - userId:
+            - type: String.
+            - unique.
+            - required.
+        - secretKey:
+            - type: String.
+            - unique.
+            - required.
+    - Create a model `mongoose.model` name it `verification` and export it.
+3. Create a new Model `Email` in [models](./models/):
+    - import on this file, nodemailer module and define the `transporter` object using process.env variables `(EMAIL_USER, EMAIL_PASSWORD)`.
+    - create a function `send`, this function will take three arguments/parameters:
+        * subject
+        * emailTo
+        * message
+
+    and will return a new promise, to send the email.<br>
+    *Hint: use `transporter.sendMail({...}).then(result).catch(error)`*
+    - export the function `send`.
+4. Create a new View File in [views/content](./views/content/) `register.js`
+    - put inside it the follwing html content:
 ```html
-<h1 class="text-center">All Books</h1>
-<section>
-    <div class="row">
-        <div class="col-md-12">
-            <!-- START RENDERING PART FOR EACH BOOK -->
-            <!-- THIS DIV: "row" below SHOULD BE EACH 3 BOOKS AND ALSO SHOULD BE FROM THE BEGINNING -->
-            <div class="row">
-            <!-- Example for one book -->
-                <div class="col-md-4 mb-3">
-                    <div class="card bg-dark">
-                        <div class="card-body">
-                            <h5 class="card-title">BOOK TITLE</h5>
-                            <p class="card-text">BOOK DESCRIPTION</p>
-                        </div>
-                        <a href="#" class="btn btn-primary">Read More</a>
+<h1>Register a new Author</h1>
+<div class="row">
+    <div class="col-md-8">
+        <form method="POST" action="/register">
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" name="name" placeholder="Full Name" required class="form-control" id="fullName" />
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input required type="email" name="email" placeholder="Email" class="form-control" id="email" />
+            </div>
+            <div class="mb-3">
+                <div class="form-group row align-items-center g-3">
+                    <div class="col-6">
+                        <label for="country" class="form-label">Country</label>
+                        <input type="text" class="form-control" name="country" placeholder="Country" required
+                            id="country" />
+                    </div>
+                    <div class="col-6">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" name="city" placeholder="City" required id="city" />
                     </div>
                 </div>
-            </div><!-- THIS CLOSING DIV SHOULD BE EACH 3 BOOKS, AND ALSO AT THE END OF LAST BOOK -->
-        </div>
+            </div>
+            <div class="mb-3">
+                <label for="phone">Phone</label>
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone" />
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
     </div>
-</section>
+</div>
 ```
-you can use `.forEach` or `for loop` to loop throw books object, dont forget to replace `BOOK TITLE` and `BOOK DESCRIPTION` with the actual data for each book. 
+5. Create a new file `authorsController.js` in [controllers](./controllers/) Folder.
+    - *This controller file, will be responsible for any thing about authors **(add/delete/update)**.*
+    - Create another Procedure `registerPage` this also accept two arguments `req, res`
+        - this will render the `mainTemplate` with content `register`,  [views](./views/) Folder
+        - export this method also with other exports.
+    - create inside it `addAuthor` procedure:
+        * will take `rea, res` arguments.
+        * This wil create a new Author, to store it in `database`, you can use `Author.create({...}).then().catch()` from [Authors](./models/Authors.js) Model.
+        * The values should come from `post request`, so you can read them using `req.body`.
+        * In `then(insertedAuthor=>{...})` case:
+            - you can use `insertedAuthor` as an argument to see inserted item, inserted id `_id` is important for next `(to store another record in verifications)`.
+            - define a `random` string variable, to be stored in Verifications collection and to be sent also in the email. name it `secretKey`. *Hint:* try this method `Math.random().toString(36).slice(-8)` this will generate a random string 8 charactors contans from [A, Z] ^ [a, z] ^ [0, 9]
+            - Insert a new record in `Verifications` collection using [Verifications](./models/Verifications.js) model. import this model and use it `Verfications.create({...}).then().catch()`:
+                - userId is same author insertedId `insertedAuthor._id`
+                - secretKey: the string variable `secretKey`
+                - In `then()` case:
+                    - use `send` function from [Email](./models/Email.js) to send the message to `req.body.email`, and the subject: `Book Store Verify Email`, message: 
+                    ```html
+                     Hello, The Email "<AUTHOR_EMAIL_HERE>" is used to register in Our Book Store. To verify Your account please click on <a href="<ORIGIN_DOMAIN/verify?uerId=USER_ID&secretKey=SECRETKEY>">This Link</a>
+                     Thanks
+                     BookStore Team.
+                    ```
+                    - *Hint*: you can use `req.get('origin')` to get the original domain like `http://localhost:3000/`
+                    - in `then(result)` case: 
+                        - Send success response to the user `res.json({...})`
+                    - in `catch(error)` case:
+                        - render Error page: `res.render('mainTemplaate', {title: 'ERROR', content: '404', error: error})`
+                - in `catch(error)` case:
+                    - render Error page: `res.render('mainTemplaate', {title: 'ERROR', content: '404', error: error})`
+        * In `catch(error)` case: 
+            - - render Error page: `res.render('mainTemplaate', {title: 'ERROR', content: '404', error: error})`
+    - export this function
+    - Create a new method `verifyEmail` takes two arguments `rea, res`:
+        - this procedure will read the incoming link from email, `userId` **And** `secretKey`, And will check in `verfications` collection if exist:
+        - if exist:
+            - update `verified` for the author in  `authors` collection to make it `true`
+            - delete the record from `verfications` collection
+            - send suucess message if done or render error page if something where wrong
+        - if not extist, render error page `page not found`.
+6. In [index.js](./routes/index.js) file in routes, create the following route-listeners `router.get/post`:
+    - First you have to import `registerPage, addAuthor, verifyEmail` from [authorsController](./controllers/)
+    - `router.get('/register', registerPage)`
+    - `router.post('/register', addAuthor)`
+    - `router.get('/verify', verifyEmail)`
+7. make a test:
+    - try to insert a new user `localhost:3000/register`
+    - check the email
+    - check `database` in `authors` and `verifications` collections
+    - click  on the link in resived email
+    - check database again `verify` field in authors and ckeck if the record still exist in `verifications` collection.
 
-6. Add the following style stuff to [style.css](./public/css/style.css) file.
-```css
-.card{
-    min-height: 40vh;
-}
-.card .card-text{
-    height: 35vh;
-    width: 100%;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    text-align: justify;
-    padding: 2%;
-    padding-right: 3%;
-}
-/* scroller style */
-.card .card-text::-webkit-scrollbar {
-    width: 5px;
-    background-color: #2e2e2e;
-}
-.card .card-text::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(246, 180, 0, 0.3);
-}
-.card .card-text::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 0, 0);
-    border-radius: 5px;
-}
-.card h5{
-    text-align: center;
-    font-weight: bold;
-}
-.card a{
-    width: 50%;
-    margin: auto;
-    margin-bottom: 10px;
-}
-```
-7. Sure you can add your own styling for the card, changing colors, font ...etc.
-
-## Dyanmic Route for Each book
-> The idea is to create a dyanmic rout for each book, so that if we visit `localhost:3000/books/book/4` , we should got the info about the book which has the `id=4`
-1. In [books.js](./routes/books.js) route, create another get listener `router.get("/book/:bookId", bookHandler)`. remember in get request `/someRoute/:any` then we can read anything comes after `/someRout/bla` as `req.params.any`, in this case we can read it as `req.params.bookId`
-2. Create this method `bookHandler` in [bookscontroller.js](./controllers/bookscontroller.js) file and export it.
-3. In `bookHandler` method, think about looking up for the book in books data, which has the same `req.params.bookId`
-4. If the book exist, then render `mainTemplate`, and send the founded book to the template, for content,  use `content: "book"` the file you will create it later.
-5. If the book not exist, render 404 error page.
-6. create a new view file name it `book.ejs` in [content](./views/content/) Folder and put inside it the folowing HTML 
-```html
-<h1 class="text-center">BOOK TITLE</h1>
-<section>
-    <div class="row">
-        <div class="col-md-12">
-            <p>BOOK DESCRIPTION</p>
-            <a href="#" class="btn btn-success">BOOK AUTHOR</a>
-            <hr>
-            <a href="/books" class="btn btn-primary">Go to All Books</a>
-        </div>
-    </div>
-</section>
-```
-7. Test the dyanmic url: `localhost:3000/books/book/1`, `localhost:3000/books/book/5`, `localhost:3000/books/book/10000`.
-8. If everything goes alright, then we can make a change in [books.ejs](./views/content/books.ejs) file, in the button `Read More`, to make the `href` attribute like `/books/book/BOOK_ID`.
-9. Test: 
-    - go to books route `localhost:3000/books` you should see all books
-    - click on `Read More` button for one book, you should be redirect to this specific book page.
-
-<hr>
-
-## Add Book Route
-1. create addbook (ejs) file. see bootetrap 5 -> forms
-   - form for information :
-     - book title textbox.
-     - book prise textbox.
-     - book pages textbox.
-     - author: select.
-     - book description texterea.
-2. create two route addbook (get/post).
-3. for get method, render addbook, send also all authors as an object.
-4. for post: Store the new book to books.json file, increnet the id.
-5. if success: redirect to allbooks page.
-6. if error: show that error.
+### 3. Bonus:
+In [register](./views/content/register) page, try to sending data using `fetch` or `jquery-ajax` **No Page Reloading**, and displat the response using [Bootstrap5 Modal Dialog](https://www.w3schools.com/bootstrap5/bootstrap_modal.php).
+        
+    

@@ -47,4 +47,4 @@ const authorsSchema = mongoose.Schema({
 
 const AuthorsModel = mongoose.model("Authors", authorsSchema)
 
-module.exports = authorsSchema
+module.exports = AuthorsModel

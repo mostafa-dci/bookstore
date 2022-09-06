@@ -14,6 +14,8 @@ mongoose.connect(process.env.MONGO_URI, error=>{
     }
 })
 
+
+
 // require bookRouter
 const booksRouter = require('./routes/books')
 // require authors router
@@ -33,6 +35,8 @@ app.set('views', 'views')
 app.use(express.static('public'))
 // make bootstrap folder in node_modules as public
 app.use('/bootstrap', express.static('node_modules/bootstrap'))
+// make jquery folder in node_modules as public
+app.use('/jquery', express.static('node_modules/jquery'))
 // 3- use json url for post requests
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))

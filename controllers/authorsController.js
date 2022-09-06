@@ -32,19 +32,23 @@ const addAuthor = (req, res)=>{
  BookStore Team.
             `).then(info=>{
                 // Sending Done
-                res.send(`<script>alert('Check Your Email To confirm')</script>`)
+                res.json({success: true, message: "An Email sent successfuly"})
+                // res.send(`<script>alert('Check Your Email To confirm')</script>`)
             }).catch(error=>{
                 // Error on sending Email
-                res.render('mainTemplate', {title: 'Error on sending Email', error: error, content: "404"})
+                // res.render('mainTemplate', {title: 'Error on sending Email', error: error, content: "404"})
+                res.json({message: "Error on sending Email", error: error})
             })
         }).catch(error=>{
             // error on Insert Verification
-            res.render('mainTemplate', {title: 'Error on Verification', error: error, content: "404"})
+            // res.render('mainTemplate', {title: 'Error on Verification', error: error, content: "404"})
+            res.json({message: "error on Insert Verification", error: error})
         })
 
     }).catch(error=>{
         // error inserting Author
-        res.render('mainTemplate', {title: 'Error on Insert Author', error: error, content: "404"})
+        // res.render('mainTemplate', {title: 'Error on Insert Author', error: error, content: "404"})
+        res.json({message: "error inserting Author", error: error})
     })
 }
 

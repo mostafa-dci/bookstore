@@ -42,13 +42,9 @@ const authorsSchema = mongoose.Schema({
     phone: {
         type: String,
         required: false
-    },
-    verified: {
-        type: Boolean,
-        default: false
     }
-})
+},{collection: 'authors'})
 
-const Authors = mongoose.model("Author", authorsSchema)
+const AuthorsModel = mongoose.model("Authors", authorsSchema)
 
-module.exports = Authors
+module.exports = authorsSchema

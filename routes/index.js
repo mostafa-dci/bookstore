@@ -1,6 +1,6 @@
 const express  = require('express')
 const{mainHandler} = require('../controllers/mainController')
-const {addAuthor, getRegisterPage} = require('../controllers/authorsController')
+const {addAuthor, getRegisterPage, veifyEmail} = require('../controllers/authorsController')
 const router = express.Router()
 
 
@@ -12,6 +12,7 @@ router.get('/register', getRegisterPage)
 // data from POST request (register form)
 router.post('/register', addAuthor)
 
-
+// verify Email request (GET)
+router.get('/verify', veifyEmail)
 
 module.exports = router

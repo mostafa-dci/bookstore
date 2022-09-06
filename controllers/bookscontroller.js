@@ -1,5 +1,5 @@
 const bookModel = require('../models/book')
-const authorModel = require('../models/authors')
+const authorModel = require('../models/Authors')
 
 
 /**

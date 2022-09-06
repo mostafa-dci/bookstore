@@ -1,5 +1,5 @@
 const books = require("../data/books.json")[0].books;
-const authorModel = require("./authors");
+const authorModel = require("./Authors");
 const fs = require("fs");
 const path = require("path");
 
